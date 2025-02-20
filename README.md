@@ -1,35 +1,35 @@
-# ¿ Expense Tracker - Flask Web App  
+# **ğŸ“Œ Expense Tracker - Flask Web App**  
 
-A simple **Flask -based** Expense Tracker that allows you to **create groups, add users, split expenses, and track debts** dynamically through a web interface.
-
----
-
-## ¿ Features
-¿ Create and manage groups  
-¿ Add users to groups  
-¿ Record expenses and split them  
-¿ View who owes whom dynamically  
+A simple **Flask-based** Expense Tracker that allows you to **create groups, add users, split expenses, and track debts** dynamically through a web interface.
 
 ---
 
-## ¿ Project Structure
+## **ğŸš€ Features**
+âœ… Create and manage **groups**  
+âœ… Add **users** to groups  
+âœ… Record **expenses** and split them  
+âœ… View **who owes whom** dynamically  
+
+---
+
+## **ğŸ“‚ Project Structure**
 ```
 /expense-tracker-flask
-¿¿¿ app.py              # Main Flask app
-¿¿¿ templates/          # HTML Templates (Jinja)
-¿   ¿¿¿ index.html
-¿   ¿¿¿ add_group.html
-¿   ¿¿¿ add_user.html
-¿   ¿¿¿ add_expense.html
-¿   ¿¿¿ debts.html
-¿¿¿ static/             # (Optional) For CSS, JS, images
-¿¿¿ requirements.txt    # List of dependencies
-¿¿¿ README.md           # Project Guide
+â”‚â”€â”€ app.py              # Main Flask app
+â”‚â”€â”€ templates/          # HTML Templates (Jinja)
+â”‚   â”œâ”€â”€ index.html
+â”‚   â”œâ”€â”€ add_group.html
+â”‚   â”œâ”€â”€ add_user.html
+â”‚   â”œâ”€â”€ add_expense.html
+â”‚   â”œâ”€â”€ debts.html
+â”‚â”€â”€ static/             # (Optional) For CSS, JS, images
+â”‚â”€â”€ requirements.txt    # List of dependencies
+â”‚â”€â”€ README.md           # Project Guide
 ```
 
 ---
 
-## ¿ Prerequisites
+## **ğŸ›  Prerequisites**
 Ensure you have the following installed:
 - **Python 3.x** (Check with `python --version` or `python3 --version`)
 - **pip** (Python package manager, installed with Python)
@@ -38,22 +38,22 @@ Ensure you have the following installed:
 
 ---
 
-## ¿ Installation Steps
+## **ğŸ“¥ Installation Steps**
 
-###  Clone the Repository
+### **1ï¸âƒ£ Clone the Repository**
 ```bash
 git clone https://github.com/your-username/expense-tracker-flask.git
 cd expense-tracker-flask
 ```
 
-### 2¿¿ Create Virtual Environment (Recommended)
+### **2ï¸âƒ£ Create a Virtual Environment (Recommended)**
 This ensures dependencies don't interfere with your system Python.
 ```bash
 python -m venv venv  # Windows
 source venv/bin/activate  # Mac/Linux
 ```
- 
-### 3¿¿ Install Dependenccies
+
+### **3ï¸âƒ£ Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
@@ -64,7 +64,7 @@ pip install flask
 
 ---
 
-## ¿ Running the Flask App
+## **ğŸš€ Running the Flask App**
 Once dependencies are installed, run the application:
 ```bash
 python app.py
@@ -76,7 +76,7 @@ http://127.0.0.1:5000/
 
 ---
 
-## ¿ Web App Pages
+## **ğŸ–¥ Web App Pages**
 | Page                 | URL Path            | Description |
 |----------------------|--------------------|-------------|
 | **Home**            | `/`                | Overview of groups and users |
@@ -87,10 +87,20 @@ http://127.0.0.1:5000/
 
 ---
 
+## **ğŸ“Œ Notes**
+- **Data Storage:** Currently, data is stored in **Python dictionaries** (in-memory). 
 
-## ¿ Future Enhancements  
-¿ Database Support
 ---
 
-## ¿ License
-This project is open-source
+## **ğŸ¯ Future Enhancements**
+  
+âœ… **Database Support**  
+
+---
+
+---
+
+## **ğŸ“œ License**
+This project is **open-source** 
+---
+
