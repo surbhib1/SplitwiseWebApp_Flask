@@ -1,0 +1,7 @@
+<h2>Who Owes Whom</h2>
+{% for debtor, creditors in debts.items() %}
+    {% for creditor, amount in creditors.items() %}
+        <p>{{ debtor }} owes {{ creditor }}: ${{ amount }}</p>
+    {% endfor %}
+{% endfor %}
+

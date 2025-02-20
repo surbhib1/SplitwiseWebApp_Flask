@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Users</title>
+</head>
+<body>
+    <h1>All Users and Their Expenses</h1>
+    <ul>
+        {% for username, expense in users.items() %}
+        <li>{{ username }} - ₹{{ expense }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
+

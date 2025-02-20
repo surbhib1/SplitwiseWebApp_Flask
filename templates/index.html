@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <a href="{{ url_for('add_group') }}">Add Group</a> |
+    <a href="{{ url_for('add_user') }}">Add User</a> |
+    <a href="{{ url_for('add_expense') }}">Add Expense</a> |
+    <a href="{{ url_for('display_debts') }}">View Debts</a>
+    
+    <h2>Groups & Users</h2>
+    {% for group, users in groups.items() %}
+        <h3>{{ group }}</h3>
+        <ul>
+            {% for user, expense in users.items() %}
+                <li>{{ user }}: {{ expense }}</li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+</body>
+</html>
+

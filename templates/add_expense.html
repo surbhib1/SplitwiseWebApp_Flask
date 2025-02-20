@@ -1,0 +1,25 @@
+<form method="post">
+    <label>Select Group:</label>
+    <select name="group_name">
+        {% for group in groups %}
+            <option value="{{ group }}">{{ group }}</option>
+        {% endfor %}
+    </select>
+
+    <label>Payer:</label>
+    <input type="text" name="payer" required>
+
+    <label>Amount:</label>
+    <input type="number" step="0.01" name="amount" required>
+
+    <label>Split With:</label>
+    {% for group, users in groups.items() %}
+        <h4>{{ group }}</h4>
+        {% for user in users %}
+            <input type="checkbox" name="selected_users" value="{{ user }}"> {{ user }}<br>
+        {% endfor %}
+    {% endfor %}
+    
+    <button type="submit">Add Expense</button>
+</form>
+
